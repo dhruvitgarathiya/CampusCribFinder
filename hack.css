@@ -1,0 +1,210 @@
+body{
+  background-color: #D9AFD9;
+
+
+}
+
+
+* {
+  box-sizing: border-box;}
+.mm {
+  display: flex;
+  margin-top: 40px;
+}
+.co {
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+}
+
+.ig {
+  max-width: 684px;
+  width: 320px;
+  margin-right: 10px;
+  height: 320px;
+  padding-right: ;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 20px;
+  justify-content: space-evenly;
+}
+/* .overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+/* color: #f1f1f1; 
+  width: 320px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1; */
+/* } */
+
+.photu {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url(/steven-ungermann-CVTmLMv5oG4-unsplash.jpg);
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 700px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3cap;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+ 
+.ccc{
+  padding-top: 150px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.accommodation-item{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+
+.accommodation-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.accommodation-section h2:before,
+.accommodation-section h2:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #333;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.accommodation-section h2:after {
+  margin-top: 0.5rem;
+}
+
+.accommodation-details p {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.accommodation-details p code {
+  display: block;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.accommodation-details p code::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+
+
+<style>
+      body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.image-container {
+  display: flex;
+  width: 300%;
+  animation: scroll 300s linear infinite;
+  height: 700px;
+}
+
+img {
+  width: 33.3333%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+.co :hover .ig{
+  transform: scale(1.2);
+}
+
+
+    </style>
+
+
+    

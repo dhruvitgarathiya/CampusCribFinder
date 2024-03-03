@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register your PG</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <form action="/submit-pg-registration" method="post">
+      <div class="form-group">
+        <label for="pg-name" class="form-label">PG Name</label>
+        <input type="text" id="pg-name" name="pg-name" class="form-control" required />
+        <p class="form-text">
+          Please enter the name of your PG.
+        </p>
+      </div>
+      <div class="form-group">
+        <label for="pg-location" class="form-label">PG Location</label>
+        <input type="text" id="pg-location" name="pg-location" class="form-control" required />
+        <p class="form-text">
+          Please enter the location of your PG.
+        </p>
+      </div>
+      <div class="form-group">
+        <label for="pg-description" class="form-label">PG Description</label>
+        <textarea id="pg-description" name="pg-description" class="form-control" rows="5" required></textarea>
+        <p class="form-text">
+          Please enter a brief description of your PG.
+        </p>
+      </div>
+      <div class="form-group">
+        <label for="pg-rooms" class="form-label">Number of Rooms</label>
+        <input type="number" id="pg-rooms" name="pg-rooms" min="1" class="form-control" required />
+        <p class="form-text">
+          Please enter the number of rooms in your PG.
+        </p>
+      </div>
+      <div class="form-group">
+        <label for="pg-rent" class="form-label">Rent per Room</label>
+        <input type="number" id="pg-rent" name="pg-rent" min="0" class="form-control" required />
+        <p class="form-text">
+          Please enter the rent per room in your PG.
+        </p>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" id="pg-wifi" name="pg-wifi" class="form-check-input" />
+        <label for="pg-wifi" class="form-check-label">WiFi Available</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" id="pg-parking" name="pg-parking" class="form-check-input" />
+        <label for="pg-parking" class="form-check-label">Parking Available</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" id="pg-washingclothes" name="pg-washingclothes" class="form-check-input" />
+        <label for="pg-washingclothes" class="form-check-label">washing machine availablity</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" id="pg-Airconditioner" name="pg-Airconditioner" class="form-check-input" />
+        <label for="pg-Airconditioner" class="form-check-label">Air-conditinor availablity</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+    <style>
+
+
+form {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 0;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 1.2em;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.form-text {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.btn-primary {
+  background-color: #dc3545;
+  border-color: #b02a37;
+  border-radius: var();
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.form-check-input {
+  border-radius: 0;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 1.2em;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.form-check-input:checked {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.form-check-label {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+    </style>
+  </body>
+</html>
+  </body>
+</html>

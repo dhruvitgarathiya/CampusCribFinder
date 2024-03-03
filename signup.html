@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Sign Up Form</h1>
+    <form action="/submit_signup" method="post" enctype="multipart/form-data">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="text" id="email" name="email" required /><br />
+
+      <label for="email">Password:</label><br />
+      <input type="text" id="Password" name="Password" required /><br />
+
+      <label for="age">Age:</label><br />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="1"
+        max="100"
+        required
+      /><br />
+
+      <label for="profile-photo">Profile Photo:</label><br />
+      <input
+        type="file"
+        id="profile-photo"
+        name="profile-photo"
+        accept="image/*"
+        required
+      /><br />
+
+      <label for="address">Address:</label><br />
+      <textarea
+        id="address"
+        name="address"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br />
+
+      <label for="food-preference">Food Preference:</label><br />
+      <select id="food-preference" name="food-preference" required>
+        <option value="vegan">Vegan</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="pescatarian">Pescatarian</option>
+        <option value="omnivore">Omnivore</option></select
+      ><br />
+
+      <input type="submit" value="Sign Up" />
+    </form>
+
+    <style>
+            body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #333;
+        color: #fff;
+      }
+
+      form {
+        width: 30rem;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+
+      label {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      textarea,
+      select {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      input[type="file"] {
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'><polygon points='0,0 7,8 14,0'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 0.5rem center;
+        background-size: 1rem;
+        padding-right: 2rem;
+      }
+
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+    </style>
+  </body>
+</html>

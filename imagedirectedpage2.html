@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="imp.js"></script>
+    
+    <header>
+      <h1>Campus Crib Finder</h1>
+    </header>
+    <main>
+      <section class="pg-listing">
+        <div class="pg-item">
+          <img
+            src="/WhatsApp Image 2024-03-01 at 10.34.53_7e5ff6b9.jpg"
+            alt="PG Image"
+          />
+          <div class="pg-details">
+            <h2>PG Name</h2>
+            <p><strong>Address:</strong> ABC Street, XYZ City</p>
+            <p><strong>Owner:</strong> John Doe</p>
+            <p><strong>Rent:</strong> $XXX per month</p>
+            <p><strong>Native Village of Roommates:</strong> Village Name</p>
+            <p><strong>Food Availability:</strong> Yes</p>
+            <a href="#" class="contact-btn">Contact Us</a>
+          </div>
+        </div>
+        <!-- Add more pg-items as needed -->
+      </section>
+    </main>
+<div class="llll">
+    <h3>Want to book your bed in this PG?</h3>
+    <h6>please fill this form</form></h6>
+  </div>
+
+    <form name="myform"        action="/submit-registration" method="post" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+    
+      <label for="native-village">Native Village:</label>
+      <input type="text" id="native-village" name="native-village" required>
+    
+      <label for="aadhar-card">Aadhar Card Upload:</label>
+      <input type="file" id="aadhar-card" name="aadhar-card" required>
+    
+      <label for="result">Result Upload:</label>
+      <input type="file" id="result" name="result" required>
+    
+      <label for="certificate-of-admission">Certificate of Admission Upload:</label>
+      <input type="file" id="certificate-of-admission" name="certificate-of-admission" required>
+    
+      <label for="testimony-letter">Testimony Letter from Previous PG Owner (Optional):</label>
+      <input type="file" id="testimony-letter" name="testimony-letter">
+    
+      <button type="submit" class="contact-btn">Submit</button>
+    </form>
+    <footer>
+      <p>&copy; 2024 PG Finder. All rights reserved.</p>
+    </footer>
+
+    <style>
+     body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+}
+
+header {
+  background-color: background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 12%, #2B86C5 99%);
+;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.pg-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 15cm;
+  
+}
+.pg-item {
+  background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  
+}
+
+
+
+.pg-item img{
+  width: 100%;
+}
+
+.pg-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pg-details {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden; /* or overflow: scroll */
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.contact-btn:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a.contact-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+a.contact-btn:hover {
+  background-color: #444;
+}
+
+h3, h6 {
+  text-align: center;
+  font-weight: normal;
+  margin: 20px 0;
+  color: #333;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  
+}
+
+.llll{
+  margin-bottom: 10cap;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: none;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.contact-btn {
+  display: block;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn:hover {
+  background-color: #444;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
